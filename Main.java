@@ -10,12 +10,12 @@ public class Main {
 
     //Prints initials of cyberoSpirit
     public static void PrintInitials() {
-        System.out.println(" CCCC     SSSS ");
-        System.out.println("C    C   S    S");
-        System.out.println("C         S");
-        System.out.println("C          S");
-        System.out.println("C           S");
-        System.out.println("C    C   S    S");
-        System.out.println(" CCCC     SSSS");
+        System.out.println(" CCC     SSS ");
+        System.out.println("C   C   S   S");
+        System.out.println("C        S   ");
+        System.out.println("C         S  ");
+        System.out.println("C          S ");
+        System.out.println("C   C   S   S");
+        System.out.println(" CCC     SSS ");
     }
 }
