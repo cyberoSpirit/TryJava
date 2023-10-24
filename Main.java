@@ -2,12 +2,31 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Survey();
-        GryffindorPoints();
+        NextLineExperiment();
+        //Survey();
+        //GryffindorPoints();
         //PrintInitials();
 
         //javac <FileName.java>
         //java <FileName>
+    }
+
+    public static void NextLineExperiment() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("How much money do you spend on food?");
+        double foodPrice = scanner.nextDouble();
+
+        System.out.println("How many times a week do you buy food?");
+        int foodAmount = scanner.nextInt();
+
+        System.out.println("What is your name?");
+        scanner.nextLine(); //To be wasted on empty space
+        String name = scanner.nextLine();
+        scanner.close();
+
+        System.out.println("Thank you " + name + " for answering all questions");
+        System.out.println("Weekly, you spend $" + (foodPrice * foodAmount) + " on food");
     }
 
     public static void Survey() {
