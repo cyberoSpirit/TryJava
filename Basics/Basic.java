@@ -20,6 +20,9 @@ public class Basic {
         //toy.booleanComparisons();
         //toy.javaMart();
         //toy.championship();
+
+        //Documented functions
+        //System.out.println(DocComments.calculateArea(1, 0.5));
         
     }
 
