@@ -21,8 +21,11 @@ public class Basic {
         //toy.javaMart();
         //toy.championship();
 
-        //Documented functions
+        //Using of documented functions
         //System.out.println(DocComments.calculateArea(1, 0.5));
+
+        var drawService = new Draw();
+        drawService.drawPicture();
         
     }
 
