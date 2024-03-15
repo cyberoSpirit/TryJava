@@ -2,27 +2,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+
         //Boolean and Conditions
-        //Bank();
-        //Calendar();
-        //BooleanComparisons();
-        //JavaMart();
-        //Championship();
+        //bank();
+        //calendar();
+        //booleanComparisons();
+        //javaMart();
+        //championship();
 
         //Basics. Types and Variables.
-        //StrangeNamedVariables();
-        //NextLineExperiment();
-        //Javagram();
-        //Survey();
-        //GryffindorPoints();
-        //PrintInitials();
+        //strangeNamedVariables();
+        //nextLineExperiment();
+        //javagram();
+        //survey();
+        //gryffindorPoints();
+        //printInitials();
 
         //javac <FileName.java>
         //java <FileName>
     }
 
     //Boolean and Conditions
-    public static void Bank() {
+    public static void bank() {
         Scanner scan = new Scanner(System.in);
         System.out.println("\n****ROYAL BANK OF JAVA****");
         System.out.println("Are you here to get a mortgage? (yes or no)");
@@ -53,7 +55,7 @@ public class Main {
         scan.close();
     }
 
-    public static void Calendar() {
+    public static void calendar() {
         System.out.println("Which day do you ask about?");
         Scanner sc = new Scanner(System.in);
         String day = sc.nextLine();
@@ -90,7 +92,7 @@ public class Main {
         sc.close();
     }
 
-    public static void BooleanComparisons() {
+    public static void booleanComparisons() {
         
         int chemistryGrade = 95;
         int biologyGrade = 75;
@@ -157,7 +159,7 @@ public class Main {
         System.out.println("Java: " + !thirdWord.equals(fourthWord) + "\n");
     }
 
-    public static void JavaMart() {
+    public static void javaMart() {
         double wallet = 100;
 
         double toyCar = 5.99;
@@ -180,7 +182,7 @@ public class Main {
         }
     }
 
-    public static void Championship() {
+    public static void championship() {
 
         //See Learn the Part for the complete instructions (link in resources folder of Udemy video).  
 
@@ -201,7 +203,7 @@ public class Main {
     }
 
     //Basics
-    public static void StrangeNamedVariables()
+    public static void strangeNamedVariables()
     {
         //Because Java is good localized
         double π = 3.14159;
@@ -212,7 +214,7 @@ public class Main {
         System.out.println(лв);
     }
 
-    public static void NextLineExperiment() {
+    public static void nextLineExperiment() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("How much money do you spend on food?");
@@ -231,7 +233,7 @@ public class Main {
     }
 
     //Kind of Survey
-    public static void Javagram() {
+    public static void javagram() {
     Scanner scan = new Scanner(System.in);
     
     System.out.println("Welcome to JavaGram! Let's sign you up.");
@@ -267,7 +269,7 @@ public class Main {
     scan.close();
 }
 
-    public static void Survey() { 
+    public static void survey() { 
         int counter = 0;
         System.out.println("Welcome. Thank you for taking the survey");
         Scanner scanner = new Scanner(System.in);
@@ -300,7 +302,7 @@ public class Main {
         System.out.println("Weekly, you spend $" + (foodPrice * foodAmount) + " on food");
     }
 
-    public static void GryffindorPoints() {
+    public static void gryffindorPoints() {
         int maxValue = 2147483647;
         System.out.println(maxValue);
 
@@ -322,7 +324,7 @@ public class Main {
     }
 
     //Prints initials of cyberoSpirit
-    public static void PrintInitials() {
+    public static void printInitials() {
         System.out.println(" CCC     SSS ");
         System.out.println("C   C   S   S");
         System.out.println("C        S   ");
