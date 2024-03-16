@@ -24,9 +24,12 @@ public class Basic {
         //Using of documented functions
         //System.out.println(DocComments.calculateArea(1, 0.5));
 
-        var drawService = new Draw();
-        drawService.drawPicture();
+        // var drawService = new Draw();
+        // drawService.drawPicture();
         
+        //Try built-in functions
+        var builtIn = new BuiltInFunctions();
+        builtIn.test();
     }
 
     //Basics
