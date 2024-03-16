@@ -34,8 +34,11 @@ public class Basic {
         //var rps = new RockPaperScissors();
         //rps.play();
 
-        var blackJack = new BlackJack();
-        blackJack.play();
+        //var blackJack = new BlackJack();
+        //blackJack.play();
+
+        //var ticTacToe = new TicTacToe();
+        //ticTacToe.play();
     }
 
     //Basics
