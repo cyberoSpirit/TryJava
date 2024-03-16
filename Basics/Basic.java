@@ -28,8 +28,11 @@ public class Basic {
         // drawService.drawPicture();
         
         //Try built-in functions
-        var builtIn = new BuiltInFunctions();
-        builtIn.test();
+        // var builtIn = new BuiltInFunctions();
+        // builtIn.test();
+
+        var rps = new RockPaperScissors();
+        rps.play();
     }
 
     //Basics
