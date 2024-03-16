@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class RockPaperScissors {
-    public static void play() {
+    public void play() {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Let's play Rock Paper Scissors.");
@@ -38,7 +38,7 @@ public class RockPaperScissors {
      *      if 1: returns the choice 'paper'
      *      if 2: returns the choice 'scissors'
      */
-    private static String computerChoice() {
+    private String computerChoice() {
         int random = (int) (Math.random() * 3);
 
         switch (random) {
@@ -80,7 +80,7 @@ public class RockPaperScissors {
      *
      *
      */
-    public static String result(String usersChoice, String computerChoice) {
+    public String result(String usersChoice, String computerChoice) {
         if((usersChoice.equals("rock") && computerChoice.equals("scissors")) ||
         (usersChoice.equals("paper") && computerChoice.equals("rock")) ||
                 (usersChoice.equals("scissors") && computerChoice.equals("paper"))) {
