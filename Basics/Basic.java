@@ -31,8 +31,11 @@ public class Basic {
         // var builtIn = new BuiltInFunctions();
         // builtIn.test();
 
-        var rps = new RockPaperScissors();
-        rps.play();
+        //var rps = new RockPaperScissors();
+        //rps.play();
+
+        var blackJack = new BlackJack();
+        blackJack.play();
     }
 
     //Basics
