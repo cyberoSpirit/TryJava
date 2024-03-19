@@ -39,6 +39,9 @@ public class Basic {
 
         //var ticTacToe = new TicTacToe();
         //ticTacToe.play();
+
+        var hangman = new Hangman();
+        hangman.play();
     }
 
     //Basics
