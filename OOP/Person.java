@@ -54,15 +54,15 @@ public class Person {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getNationality() {
-        return nationality;
+        return this.nationality;
     }
 
     public String getDateOfBirth() {
-        return dateOfBirth;
+        return this.dateOfBirth;
     }
 
     public String[] getPassport() {
@@ -70,7 +70,7 @@ public class Person {
     }
 
     public int getSeatNumber() {
-        return seatNumber;
+        return this.seatNumber;
     }
 
     public int chooseSeat(int maxNumber) {
@@ -79,10 +79,10 @@ public class Person {
     }
     
     public String toString() {
-        return "Name: " + name + "\n" + "Nationality: " + 
-            nationality + "\n" + "Date of Birth: " + 
-            dateOfBirth + "\n" + "Seat Number: " +
-            seatNumber + "\n" + "Passport: " + 
-            Arrays.toString(passport) + "\n";
+        return "Name: " + this.name + "\n" + "Nationality: " + 
+        this.nationality + "\n" + "Date of Birth: " + 
+        this.dateOfBirth + "\n" + "Seat Number: " +
+        this.seatNumber + "\n" + "Passport: " + 
+        Arrays.toString(this.passport) + "\n";
     }
 }

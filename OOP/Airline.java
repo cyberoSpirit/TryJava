@@ -3,14 +3,15 @@ public class Airline {
     private int reserved = 0;
     private Person[] passengers;
 
-    public Airline() {
-        passengers = new Person[11];
+    public Airline(int seats) {
+        this.seatsCount = seats;
+        this.passengers = new Person[seatsCount];
     }
 
     public Person getPerson(int index) {
-        if (index >= 0 && index < seatsCount)
+        if (index >= 0 && index < this.seatsCount)
         {
-            return passengers[index];
+            return this.passengers[index];
         } else {
             throw new IndexOutOfBoundsException("Seat is out of available range.");
         }
@@ -19,12 +20,12 @@ public class Airline {
     public void createReservation(Person passenger) {
         int index = passenger.getSeatNumber() - 1;
 
-        if (reserved == seatsCount) {
+        if (this.reserved == this.seatsCount) {
             System.out.println("Flight is sold out.");
             return;
         }
 
-        while (passengers[index] != null) {
+        while (this.passengers[index] != null) {
             System.out.println(
                     "\n" + passenger.getName() + ", seat: "
                             + passenger.getSeatNumber()
@@ -32,28 +33,28 @@ public class Airline {
             index = passenger.chooseSeat(seatsCount) - 1;
         }
 
-        passengers[index] = new Person(passenger);
+        this.passengers[index] = new Person(passenger);
         System.out.println(
                 "Thank you " + passenger.getName()
                         + " for flying with Java airlines. Your seat number is "
                         + passenger.getSeatNumber() + ".\n");
-        ++reserved;
+        ++this.reserved;
     }
     
     public Person[] getPassengers() {
-        var passengers = new Person[reserved];
+        var passengers = new Person[this.reserved];
         int i = 0;
         for (Person passenger : passengers) {
             if (passenger != null) {
-                passengers[i] = new Person(passenger);
+                this.passengers[i] = new Person(passenger);
                 ++i;
             }
         }
-        return passengers;
+        return this.passengers;
     }
 
     public void printPassengers() {
-        for (Person passenger : passengers) {
+        for (Person passenger : this.passengers) {
             if (passenger != null) {
                 System.out.println(passenger.toString());
             }
