@@ -1,3 +1,4 @@
+package Airline;
 public class Custom {
     public static boolean verifyPassport(Person person) {
         boolean passportApproved = (int) (Math.random() * 2) == 0;

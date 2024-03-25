@@ -1,3 +1,4 @@
+package Airline;
 public class Airline {
     private int seatsCount = 11;
     private int reserved = 0;
