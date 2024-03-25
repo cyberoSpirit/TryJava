@@ -11,7 +11,9 @@ public class Airline {
     public Person getPerson(int index) {
         if (index >= 0 && index < this.seatsCount)
         {
-            return this.passengers[index];
+            return this.passengers[index] != null ? 
+                new Person(this.passengers[index]) :
+                null;
         } else {
             throw new IndexOutOfBoundsException("Seat is out of available range.");
         }

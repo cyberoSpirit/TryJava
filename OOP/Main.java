@@ -16,7 +16,7 @@ public class Main {
             new Person("Hammurabi", "Babylon", "1750 BC", 10)
         };
 
-        var airline = new Airline();
+        var airline = new Airline(11);
 
         for (Person person : people) {
             if (Custom.verifyPassport(person)) {
