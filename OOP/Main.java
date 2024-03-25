@@ -6,11 +6,15 @@ import java.util.Scanner;
 import Airline.Airline;
 import Airline.Custom;
 import Airline.Person;
+import Store.Store;
 
 public class Main {
     public static void main(String[] args) {
         //TestAirline();
-        TestDates();
+        //TestDates();
+        //TryList.tryArrayList();
+        //TryList.tryLinkedList();
+        //TryList.testALAndLL();
     }
     
     public static void TestAirline() {
