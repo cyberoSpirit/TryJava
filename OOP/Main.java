@@ -12,11 +12,22 @@ import Store.Store;
 public class Main {
     public static void main(String[] args) {
         //TestAirline();
+        
         //TestDates();
+
         //TryList.tryArrayList();
         //TryList.tryLinkedList();
         //TryList.testALAndLL();
-        TestStore();
+        //TestStore();
+
+        var fileName = "greetings.txt";
+        TryExceptions.TestCheckedExceptionInside(fileName);
+
+        try {
+            TryExceptions.TestCheckedExceptionOutside(fileName);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
     
     public static void TestAirline() {
