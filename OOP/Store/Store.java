@@ -15,6 +15,12 @@ public class Store {
         for (Movie movie : movies) {
             this.movies.add(new Movie(movie));
         }
+
+        //try overriden equals method of Movie class
+        System.out.println(movies[1]);
+        System.out.println(this.movies.get(1));
+        System.out.println(movies[1].equals(this.movies.get(1)));
+        System.out.println(this.movies.contains(movies[1]));
     }
 
     public Movie getMovie(int index) {
