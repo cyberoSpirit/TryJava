@@ -21,4 +21,35 @@ public class TryExceptions {
         System.out.println(scanner.nextLine());
         scanner.close();
     }
+
+    public static void TestUncheckedExceptionOutside() {
+
+        //**************ArrayIndexOutOfBounds**************//
+        int[] grades = new int[] {96, 65, 56, 86};
+        System.out.println(grades[3]); // to get an exception put 4
+
+       //**************NullPointerException**************//
+        String[] names = new String[7]; 
+        names[0] = "John";
+        names[1] = "Jim";
+        names[2] = "Joe";
+
+        for (String name : names) {
+            if (name != null) { //remove to get an exception
+                System.out.println(name.toUpperCase());
+            }
+        }
+
+        //**************InputMismatchException**************//
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a random integer");
+        //scanner.nextInt(); //throws exception if user enter a word
+        if (scanner.hasNextInt()) {
+            scanner.nextInt();
+        } else {
+            scanner.next();
+        }
+        scanner.close();
+
+    }
 }
