@@ -7,11 +7,10 @@ public class Movie {
     private double rating;
 
     public Movie(String name, String format, double rating) {
-        this.name = name;
-        this.format = format;
-        this.rating = rating;
+        setName(name);
+        setFormat(format);
+        setRating(rating);
     }    
-
 
     public Movie(Movie source) {
         this.name = source.name;
@@ -24,6 +23,9 @@ public class Movie {
     }
 
     public void setName(String name) {
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Invalid name value.");
+        }
         this.name = name;
     }
     
@@ -36,10 +38,16 @@ public class Movie {
     }
 
     public void setFormat(String format) {
+        if (format == null || format.trim().isEmpty()) {
+            throw new IllegalArgumentException("Format is invalid");
+        }
         this.format = format;
     }
 
     public void setRating(double rating) {
+        if (rating < 0 || rating > 10) {
+            throw new IllegalArgumentException("The rating value is invalid.");
+        }
         this.rating = rating;
     }
 
