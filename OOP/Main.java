@@ -43,6 +43,6 @@ public class Main {
 
         //TestGame.TryGame();
 
-        //TestProducts.Try();
+        TestProducts.Try();
     }
 }

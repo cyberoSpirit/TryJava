@@ -10,6 +10,7 @@ public class TestProducts {
         shirt.setColor("red");
         shirt.setPrice(12.5);
         shirt.fold();
+        productStore(shirt);
 
         Pants pants = new Pants();
         pants.setBrand("LiA");
@@ -18,5 +19,10 @@ public class TestProducts {
         pants.setWaist(90);
         pants.setPrice(15);
         pants.fold();
+        productStore(pants);
+    }
+
+    public static void productStore(Product product) {
+        System.out.println("Thank you for purchasing " + product.getBrand() + " " + product.getClass().getSimpleName());
     }
 }
