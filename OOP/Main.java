@@ -4,6 +4,7 @@ import Airline.AirlineProcessor;
 import Circle.TryCircle;
 import CityPopulation.TestCity;
 import Contacts.ContactList;
+import Game.TestGame;
 import SmallExamples.TryDates;
 import SmallExamples.TryExceptions;
 import SmallExamples.TryList;
@@ -38,5 +39,7 @@ public class Main {
         //TestCity.Test();
 
         //TryCircle.TestCircle();
+
+        //TestGame.TryGame();
     }
 }
