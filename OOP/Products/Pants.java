@@ -20,4 +20,21 @@ public class Pants extends Product {
     public void setLength(int length) {
         this.length = length;
     }
+
+    public Pants(double price, String color, String brand, int length, int waist) {
+        super(price, color, brand);
+        setLength(length);
+        setWaist(waist);
+    }
+
+    @Override
+    public void wear() {
+        System.out.println("Pants are perfect on you!");
+    }
+
+    @Override
+    public void fold() {
+        super.fold();
+        System.out.println("Fold one leg over the other.");
+    }
 }
