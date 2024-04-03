@@ -40,6 +40,6 @@ public class Main {
 
         //TryCircle.TestCircle();
 
-        //TestGame.TryGame();
+        TestGame.TryGame();
     }
 }
