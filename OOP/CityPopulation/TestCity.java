@@ -3,8 +3,10 @@ package CityPopulation;
 import java.util.Scanner;
 
 public class TestCity {
+
     public static void Test() {
         Scanner scanner = new Scanner(System.in);
+
 
         String cityName = promptForCityName(scanner);
         String country = promptForCountry(scanner);
