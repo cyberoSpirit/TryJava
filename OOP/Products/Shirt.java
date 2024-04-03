@@ -27,4 +27,9 @@ public class Shirt extends Product {
         super.fold();
         System.out.println("Fold sideways.");
     }
+
+    @Override
+    public String toString() {
+        return "Shirt: " + super.getBrand() + ", " + super.getColor() + ", " + super.getPrice() + ", " + size;
+    }
 }

@@ -37,4 +37,9 @@ public class Pants extends Product {
         super.fold();
         System.out.println("Fold one leg over the other.");
     }
+
+    @Override
+    public String toString() {
+        return "Pants: " + super.getBrand() + ", " + super.getColor() + ", " + super.getPrice() + ", l-" + length + ", w-" + waist;
+    }
 }
