@@ -5,6 +5,7 @@ import Circle.TryCircle;
 import CityPopulation.TestCity;
 import Contacts.ContactList;
 import Game.TestGame;
+import Laboratory.TestLab;
 import Products.TestProducts;
 import SmallExamples.TryDates;
 import SmallExamples.TryExceptions;
@@ -43,6 +44,8 @@ public class Main {
 
         //TestGame.TryGame();
 
-        TestProducts.Try();
+        //TestProducts.Try();
+
+        //TestLab.TryLab();
     }
 }
