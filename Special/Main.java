@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         //TestLambda.TryLambda();
         //TestBigDecimal.TryBigDecimal();
-        TryInterfaces.TestInterfaces();
+        //TryInterfaces.TestInterfaces();
+        TryCapstone.TestCapstone();
     }
 }
