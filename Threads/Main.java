@@ -1,4 +1,5 @@
 import ThreadCreation.CreateThread;
+import ThreadInheritanse.ThreadInheritanse;
 import ThreadPriority.ThreadPriority;
 import ThreadPriority.ThreadSleepEffect;
 
@@ -8,5 +9,6 @@ public class Main {
         //CreateThread.createThread();
         //ThreadPriority.tryThreadPriority();
         //ThreadSleepEffect.tryThreadSleepEffect();
+        ThreadInheritanse.tryThreadInheritanse();
     }
 }
