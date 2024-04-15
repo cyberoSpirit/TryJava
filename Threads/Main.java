@@ -1,5 +1,6 @@
 import ThreadCreation.CreateThread;
 import ThreadInheritanse.ThreadInheritanse;
+import ThreadJoining.ThreadJoining;
 import ThreadPriority.ThreadPriority;
 import ThreadPriority.ThreadSleepEffect;
 
@@ -9,6 +10,12 @@ public class Main {
         //CreateThread.createThread();
         //ThreadPriority.tryThreadPriority();
         //ThreadSleepEffect.tryThreadSleepEffect();
-        ThreadInheritanse.tryThreadInheritanse();
+        //ThreadInheritanse.tryThreadInheritanse();
+        try {
+            ThreadJoining.tryThreadJoining();
+        } catch (Exception e) {
+            System.out.println(e.getStackTrace());
+        }
+        
     }
 }
