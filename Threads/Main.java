@@ -1,3 +1,4 @@
+import ReducingLatency.ImageToGrayscale;
 import ThreadCreation.CreateThread;
 import ThreadInheritanse.ThreadInheritanse;
 import ThreadInteraption.ThreadInteraption;
@@ -12,10 +13,11 @@ public class Main {
         //ThreadPriority.tryThreadPriority();
         //ThreadSleepEffect.tryThreadSleepEffect();
         //ThreadInheritanse.tryThreadInheritanse();
-        
+
         try {
             //ThreadJoining.tryThreadJoining();
-            ThreadInteraption.testThreadInteraption();
+            //ThreadInteraption.testThreadInteraption();
+            ImageToGrayscale.ReducingLatency();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
