@@ -1,3 +1,5 @@
+import IncreasingThroughput.Client.ApiThroughputTester;
+import IncreasingThroughput.Server.FactorialHttpServer;
 import ReducingLatency.ImageToGrayscale;
 import ThreadCreation.CreateThread;
 import ThreadInheritanse.ThreadInheritanse;
@@ -17,7 +19,8 @@ public class Main {
         try {
             //ThreadJoining.tryThreadJoining();
             //ThreadInteraption.testThreadInteraption();
-            ImageToGrayscale.ReducingLatency();
+            //ImageToGrayscale.ReducingLatency();
+            FactorialHttpServer.tryIncreasingThroughput();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
