@@ -1,3 +1,4 @@
+import DataRace.DataRaceExample;
 import IncreasingThroughput.Client.ApiThroughputTester;
 import IncreasingThroughput.Server.FactorialHttpServer;
 import ReducingLatency.ImageToGrayscale;
@@ -20,7 +21,8 @@ public class Main {
             //ThreadJoining.tryThreadJoining();
             //ThreadInteraption.testThreadInteraption();
             //ImageToGrayscale.ReducingLatency();
-            FactorialHttpServer.tryIncreasingThroughput();
+            //FactorialHttpServer.tryIncreasingThroughput();
+            DataRaceExample.tryDataRace();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
