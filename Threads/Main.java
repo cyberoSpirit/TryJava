@@ -1,6 +1,7 @@
 import DataRace.DataRaceExample;
 import IncreasingThroughput.Client.ApiThroughputTester;
 import IncreasingThroughput.Server.FactorialHttpServer;
+import RaceConditions.RaceConditionCriticalSection;
 import RaceConditions.RaceConditionExample;
 import ReducingLatency.ImageToGrayscale;
 import ThreadCreation.CreateThread;
@@ -24,7 +25,8 @@ public class Main {
             //ImageToGrayscale.ReducingLatency();
             //FactorialHttpServer.tryIncreasingThroughput();
             //DataRaceExample.tryDataRace();
-            RaceConditionExample.tryRaceConditions();
+            //RaceConditionExample.tryRaceConditions();
+            RaceConditionCriticalSection.tryRaceConditions();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
